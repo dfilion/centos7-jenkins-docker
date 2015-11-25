@@ -7,7 +7,7 @@ For more information about this image please see the [GitHub repo](https://githu
 
 # What is centos7-jenkins?
 
-centos6-jenkins is an image that provides a 64-bit CenOS6 ssh Jenkins client.
+centos7-jenkins is an image that provides a 64-bit CenOS6 ssh Jenkins client.
 
 
 # Why centos7-jenkins?
@@ -36,3 +36,4 @@ Password: jenkins
 New SSH host keys are generated on every execution of the image.
 
 Static ssh keys (user or host) are not yet supported.
+
