@@ -1,13 +1,14 @@
 # Supported tags and respective `Dockerfile` links
 
-- latest [(Dockerfile)](https://github.com/dfilion/centos6-jenkins-docker/blob/master/Dockerfile)
+- latest [(Dockerfile)](https://github.com/dfilion/centos7-jenkins-docker/blob/master/Dockerfile)
 
 For more information about this image please see the [GitHub repo](https://github.com/dfilion/centos7-jenkins-docker).
 
 
 # What is centos7-jenkins?
 
-centos7-jenkins is an image that provides a 64-bit CenOS6 ssh Jenkins client.
+centos7-jenkins is yet another image that provides a CentOS 7.2-1511 
+SSH Jenkins client.
 
 
 # Why centos7-jenkins?
@@ -33,7 +34,10 @@ The running image is accessed using SSH using the credentials:
 Username: jenkins
 Password: jenkins
 
-New SSH host keys are generated on every execution of the image.
 
 Static ssh keys (user or host) are not yet supported.
 
+# Build Notes
+
+If your building this container on RHEL/CentOS 7.2, read the [RHEL 7.2 Release Notes](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.2_Release_Notes/technology-preview-file_systems.html)
+to avoid errors with `rm -rf`.
